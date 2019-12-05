@@ -15,6 +15,45 @@
 	<link rel="stylesheet" href="html/dotcreative/css/main.css" class="color-switcher-link">
 	<script src="html/dotcreative/js/vendor/modernizr-2.6.2.min.js"></script>
 <style>
+	.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 * {
   box-sizing: border-box;
 }
@@ -526,15 +565,34 @@
 					</div>
 
 			</section>
+					
 					<div class="row">
 					  <div class="column">
-					    <img src="html/dotcreative/images/gallery/pic1.jpeg" alt="hackoff" style="width:5000px;height:200px">
+					  	<div class="container">
+					    <img src="html/dotcreative/images/gallery/pic1.jpeg" alt="hackoff" style="width:100px;height:100px">
+					    <div class="overlay">
+    				
+    				<div class="text">Hackoff</div>
+  					</div>
+					</div>
 					  </div>
 					  <div class="column">
-					    <img src="html/dotcreative/images/gallery/pic2.jpeg" alt="social transformers" style="width:5000px;height:200px">
+					  	<div class="container">
+					    <img src="html/dotcreative/images/gallery/pic2.jpeg" alt="social transformers" style="width:100px;height:100px">
+					<div class="overlay">
+    				
+    				<div class="text">social transformer</div>
+  					</div>
+					</div>
 					  </div>
 					  <div class="column">
-					    <img src="html/dotcreative/images/gallery/pic5.jfif" alt="vittuc" style="width:5000px;height:200px" >
+					  	<div class="container">
+					    <img src="html/dotcreative/images/gallery/pic5.jfif" alt="vittuc" style="width:100px;height:100px" >
+					  <div class="overlay">
+    				
+    				<div class="text">vittuc</div>
+  					</div>
+					</div>
 					  </div>
 					</div>
 			
