@@ -88,28 +88,7 @@ Border color for elements in color section: rgba(255, 255, 255, 0.15)
 */
 /*
 ** General Styles for HTML tags
-*/
-html {
-	height: 100%;
-	overflow: visible;
-	position: relative;
-	width: 100%;
-}
 
-::-moz-selection {
-	background-color: #ff497c;
-	color: #fff;
-}
-
-::selection {
-	background-color: #bf1fbf;
-	color: #fff;
-}
-
-::-moz-selection {
-	background-color: #ff497c;
-	color: #fff;
-}
 body {
   font-family: Arial;
   margin: 0;
