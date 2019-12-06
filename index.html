@@ -14,8 +14,9 @@
 	<link rel="stylesheet" href="html/dotcreative/css/font-awesome.css">
 	<link rel="stylesheet" href="html/dotcreative/css/main.css" class="color-switcher-link">
 	<script src="html/dotcreative/js/vendor/modernizr-2.6.2.min.js"></script>
-
+	
 </head>
+
 <body>
 	
 	<div class="preloader">
@@ -48,7 +49,7 @@
 						<div class="row align-items-center">
 							<div class="col-xl-2 col-lg-3 col-11">
 								<a href="index.html" class="logo text-center">
-									<img src="html/dotcreative/images/iet2.png" alt="">
+									<img src="html/dotcreative/images/iet1.jpeg" alt="">
 								</a>
 							</div>
 							<div class="col-xl-8 col-lg-6 col-1 text-sm-center">
@@ -64,7 +65,7 @@
 											<a href="#ghi">Domains</a>
 										</li>
 										<li>
-											<a href="#jkl">Flagship Events</a>
+											<a href="#jkl">Events</a>
 
 										</li>
 										<li>
@@ -509,18 +510,98 @@
 					</div>
 
 			</section>
-					<div class="row">
-					  <div class="column">
-					    <img src="html/dotcreative/images/gallery/pic1.jpeg" alt="hackoff" style="width:1000px;height:200px">
-					  </div>
-					  <div class="column">
-					    <img src="html/dotcreative/images/gallery/pic2.jpeg" alt="social transformers" style="width:1000px;height:200px">
-					  </div>
-					  <div class="column">
-					    <img src="html/dotcreative/images/gallery/pic5.jfif" alt="vittuc" style="width:1000px;height:200px" >
-					  </div>
-					</div>
-			
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="html/dotcreative/images/hackofff2.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="html/dotcreative/images/dates.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="html/dotcreative/images/classroom.jpeg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="html/dotcreative/images/vittuc2.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="html/dotcreative/images/patw2.jpeg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="html/dotcreative/images/social2.jpeg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="html/dotcreative/images/hackofff2.jpeg" style="width:100%" onclick="currentSlide(1)" alt="HACKOFF">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="html/dotcreative/images/dates.jpeg" style="width:100%" onclick="currentSlide(2)" alt="HACKOFF">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="html/dotcreative/images/classroom.jpeg" style="width:100%" onclick="currentSlide(3)" alt="WORKSHOPS">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="html/dotcreative/images/vittuc2.jpeg" style="width:100%" onclick="currentSlide(4)" alt="VITTUC">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="html/dotcreative/images/patw2.jpeg" style="width:100%" onclick="currentSlide(5)" alt="PRESENT AROUND THE WORLD">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="html/dotcreative/images/social2.jpeg" style="width:100%" onclick="currentSlide(6)" alt="SOCIAL TRANSFORMER">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+		
 					<div class="divider-30 d-none d-lg-block"></div>
 					<div class="text-center img-wrap col-md-12 layout-2">
 						<img src="html/dotcreative/img/dark_line_short.png" alt="">
